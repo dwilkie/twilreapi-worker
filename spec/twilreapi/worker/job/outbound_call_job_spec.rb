@@ -1,6 +1,7 @@
 require 'spec_helper'
+require 'twilreapi/worker/job/outbound_call_job'
 
-describe(Twilreapi::Sidekiq.const_get(ENV["TWILREAPI_SIDEKIQ_OUTBOUND_CALL_WORKER_CLASS"] || "OutboundCallWorker")) do
+describe Twilreapi::Worker::Job::OutboundCallJob do
   describe "#perform(payload)" do
     let(:payload) { "some payload" }
     let(:call_id) { 1234 }
@@ -15,7 +16,7 @@ describe(Twilreapi::Sidekiq.const_get(ENV["TWILREAPI_SIDEKIQ_OUTBOUND_CALL_WORKE
     end
 
     def assert_call_initiated!
-      expect(DRbObject).to receive(:new_with_uri).with(ENV["TWILREAPI_SIDEKIQ_OUTBOUND_CALL_WORKER_DRB_URL"])
+      expect(DRbObject).to receive(:new_with_uri).with(ENV["TWILREAPI_WORKER_JOB_OUTBOUND_CALL_JOB_DRB_URL"])
       expect(drb_object).to receive(:initiate_outbound_call!).with(payload)
       subject.perform(payload)
     end

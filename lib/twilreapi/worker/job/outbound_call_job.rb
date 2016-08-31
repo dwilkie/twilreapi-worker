@@ -1,4 +1,4 @@
-class Twilreapi::Worker::OutboundCallWorker
+class Twilreapi::Worker::Job::OutboundCallJob
   require 'drb'
 
   def perform(payload)
@@ -13,6 +13,6 @@ class Twilreapi::Worker::OutboundCallWorker
   end
 
   def drb_url
-    ENV["TWILREAPI_WORKER_OUTBOUND_CALL_WORKER_DRB_URL"]
+    ENV["TWILREAPI_WORKER_JOB_OUTBOUND_CALL_JOB_DRB_URL"]
   end
 end
