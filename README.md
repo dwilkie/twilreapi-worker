@@ -1,8 +1,8 @@
 # Twilreapi::Worker
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/twilreapi/worker`. To experiment with that code, run `bin/console` for an interactive prompt.
+[![Build Status](https://travis-ci.org/dwilkie/twilreapi-worker.svg?branch=master)](https://travis-ci.org/dwilkie/twilreapi-worker)
 
-TODO: Delete this and the text above, and describe your gem
+A collection of workers for [Twilreapi](https://github.com/dwilkie/twilreapi)
 
 ## Installation
 
@@ -20,9 +20,21 @@ Or install it yourself as:
 
     $ gem install twilreapi-worker
 
+## Workers
+
+### Twilreapi::Worker::Job::OutboundCallJob
+
+Initates an outbound call through DRb.
+
 ## Usage
 
-TODO: Write usage instructions here
+### ActiveJob (Rails)
+
+See [twilreapi](https://github.com/dwilkie/twilreapi)
+
+### Plain Ol' Ruby
+
+See [twilreapi-sidekiq](https://github.com/dwilkie/twilreapi-sidekiq)
 
 ## Development
 
@@ -32,7 +44,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/twilreapi-worker.
+Bug reports and pull requests are welcome on GitHub at https://github.com/dwilkie/twilreapi-worker.
 
 
 ## License
