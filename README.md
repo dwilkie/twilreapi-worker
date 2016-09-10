@@ -28,13 +28,9 @@ Initates an outbound call through DRb.
 
 ## Usage
 
-### ActiveJob (Rails)
+## Plain Ol' Ruby
 
-See [twilreapi](https://github.com/dwilkie/twilreapi)
-
-### Plain Ol' Ruby
-
-See [twilreapi-sidekiq](https://github.com/dwilkie/twilreapi-sidekiq)
+See [twilreapi](https://github.com/dwilkie/twilreapi) or [twilreapi-sidekiq](https://github.com/dwilkie/twilreapi-sidekiq) for implementations.
 
 ## Development
 

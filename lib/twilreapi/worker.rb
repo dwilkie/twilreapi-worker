@@ -4,8 +4,5 @@ module Twilreapi
   module Worker
     module Job
     end
-
-    module ActiveJob
-    end
   end
 end
