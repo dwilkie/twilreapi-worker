@@ -1,8 +1,8 @@
 # Twilreapi::Worker
 
-[![Build Status](https://travis-ci.org/dwilkie/twilreapi-worker.svg?branch=master)](https://travis-ci.org/dwilkie/twilreapi-worker)
+[![Build Status](https://travis-ci.org/somleng/twilreapi-worker.svg?branch=master)](https://travis-ci.org/somleng/twilreapi-worker)
 
-A collection of workers for [Twilreapi](https://github.com/dwilkie/twilreapi)
+A collection of workers for [Twilreapi](https://github.com/somleng/twilreapi)
 
 ## Installation
 
@@ -30,7 +30,7 @@ Initates an outbound call through DRb.
 
 ## Plain Ol' Ruby
 
-See [twilreapi](https://github.com/dwilkie/twilreapi) or [twilreapi-sidekiq](https://github.com/dwilkie/twilreapi-sidekiq) for implementations.
+See [twilreapi](https://github.com/somleng/twilreapi) or [twilreapi-sidekiq](https://github.com/somleng/twilreapi-sidekiq) for implementations.
 
 ## Development
 
@@ -40,8 +40,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/dwilkie/twilreapi-worker.
-
+Bug reports and pull requests are welcome on GitHub at https://github.com/somleng/twilreapi-worker.
 
 ## License
 
